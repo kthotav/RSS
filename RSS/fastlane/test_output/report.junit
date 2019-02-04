@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='RSSUITests.xctest' tests='3' failures='0'>
+  <testsuite name='RSSTests.RSSTests' tests='2' failures='0'>
+    <testcase classname='RSSTests.RSSTests' name='testExample' time='0.001'/>
+    <testcase classname='RSSTests.RSSTests' name='testPerformanceExample' time='0.344'/>
+  </testsuite>
+  <testsuite name='RSSUITests.RSSUITests' tests='1' failures='0'>
+    <testcase classname='RSSUITests.RSSUITests' name='testExample' time='4.603'/>
+  </testsuite>
+</testsuites>
