@@ -15,6 +15,7 @@
 		376198022207B91E004EA343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376198002207B91E004EA343 /* LaunchScreen.storyboard */; };
 		3761980D2207B91E004EA343 /* RSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3761980C2207B91E004EA343 /* RSSTests.swift */; };
 		376198182207B91E004EA343 /* RSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376198172207B91E004EA343 /* RSSUITests.swift */; };
+		3779046D22095C340047E588 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779046C22095C340047E588 /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		376198132207B91E004EA343 /* RSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		376198172207B91E004EA343 /* RSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSUITests.swift; sourceTree = "<group>"; };
 		376198192207B91E004EA343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3779046C22095C340047E588 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				376197FE2207B91E004EA343 /* Assets.xcassets */,
 				376198002207B91E004EA343 /* LaunchScreen.storyboard */,
 				376198032207B91E004EA343 /* Info.plist */,
+				3779046C22095C340047E588 /* Keys.swift */,
 			);
 			path = RSS;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				376197FA2207B91D004EA343 /* SecondViewController.swift in Sources */,
+				3779046D22095C340047E588 /* Keys.swift in Sources */,
 				376197F62207B91D004EA343 /* AppDelegate.swift in Sources */,
 				376197F82207B91D004EA343 /* FirstViewController.swift in Sources */,
 			);
