@@ -1,0 +1,5 @@
+# Carthage
+RSS/Carthage/*
+
+# Other
+RSS/RSS.xcodeproj/project.xcworkspace/xcuserdata/*
