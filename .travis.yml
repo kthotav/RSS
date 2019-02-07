@@ -1,6 +1,19 @@
 os: osx
 osx_image: xcode10.1
 language: swift
-xcode_project: RSS/RSS.xcodeproj # path to your xcodeproj folder
+
+cache: 
+  directories: 
+    - RSS/Carthage
+
+before_install:
+  - brew install carthage || true
+  - brew outdated carthage || brew upgrade carthage
+  - cd RSS
+
+before_script:
+  - carthage bootstrap --platform iOS --no-use-binaries --cache-builds
+
+xcode_project: RSS.xcodeproj # path to your xcodeproj folder
 xcode_scheme: RSS
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XS
