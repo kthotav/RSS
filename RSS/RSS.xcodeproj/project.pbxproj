@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3744D545220E9A9200E1F07B /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3744D544220E9A9200E1F07B /* Sources.swift */; };
+		3744D5472212A0CB00E1F07B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3744D5462212A0CB00E1F07B /* Networking.swift */; };
 		376197F62207B91D004EA343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376197F52207B91D004EA343 /* AppDelegate.swift */; };
 		376197F82207B91D004EA343 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376197F72207B91D004EA343 /* FirstViewController.swift */; };
 		376197FA2207B91D004EA343 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376197F92207B91D004EA343 /* SecondViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3744D544220E9A9200E1F07B /* Sources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
+		3744D5462212A0CB00E1F07B /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		376197F22207B91D004EA343 /* RSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		376197F52207B91D004EA343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		376197F72207B91D004EA343 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				376198002207B91E004EA343 /* LaunchScreen.storyboard */,
 				376198032207B91E004EA343 /* Info.plist */,
 				3779046C22095C340047E588 /* Keys.swift */,
+				3744D544220E9A9200E1F07B /* Sources.swift */,
+				3744D5462212A0CB00E1F07B /* Networking.swift */,
 			);
 			path = RSS;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3744D545220E9A9200E1F07B /* Sources.swift in Sources */,
 				376197FA2207B91D004EA343 /* SecondViewController.swift in Sources */,
 				3779046D22095C340047E588 /* Keys.swift in Sources */,
+				3744D5472212A0CB00E1F07B /* Networking.swift in Sources */,
 				376197F62207B91D004EA343 /* AppDelegate.swift in Sources */,
 				376197F82207B91D004EA343 /* FirstViewController.swift in Sources */,
 			);
