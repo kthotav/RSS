@@ -19,6 +19,7 @@
 		376198182207B91E004EA343 /* RSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376198172207B91E004EA343 /* RSSUITests.swift */; };
 		3779046D22095C340047E588 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779046C22095C340047E588 /* Keys.swift */; };
 		37D9E921220AB632003ED67C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D9E920220AB632003ED67C /* Alamofire.framework */; };
+		37DF26252215408B00BACCC5 /* SourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF26242215408B00BACCC5 /* SourcesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		376198192207B91E004EA343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3779046C22095C340047E588 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		37D9E920220AB632003ED67C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		37DF26242215408B00BACCC5 /* SourcesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +128,9 @@
 		3761980B2207B91E004EA343 /* RSSTests */ = {
 			isa = PBXGroup;
 			children = (
-				3761980C2207B91E004EA343 /* RSSTests.swift */,
 				3761980E2207B91E004EA343 /* Info.plist */,
+				3761980C2207B91E004EA343 /* RSSTests.swift */,
+				37DF26242215408B00BACCC5 /* SourcesTests.swift */,
 			);
 			path = RSSTests;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DF26252215408B00BACCC5 /* SourcesTests.swift in Sources */,
 				3761980D2207B91E004EA343 /* RSSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

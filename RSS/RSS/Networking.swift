@@ -10,3 +10,8 @@ enum Result<Value> {
     case success(Value)
     case failure(Error)
 }
+
+enum HTTPError: Error {
+    case clientError
+    case serverError
+}
