@@ -18,6 +18,7 @@
 		3761980D2207B91E004EA343 /* RSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3761980C2207B91E004EA343 /* RSSTests.swift */; };
 		376198182207B91E004EA343 /* RSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376198172207B91E004EA343 /* RSSUITests.swift */; };
 		3779046D22095C340047E588 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779046C22095C340047E588 /* Keys.swift */; };
+		37A5DFB02217DA3B003DEF15 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5DFAF2217DA3B003DEF15 /* APIError.swift */; };
 		37D9E921220AB632003ED67C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D9E920220AB632003ED67C /* Alamofire.framework */; };
 		37DF26252215408B00BACCC5 /* SourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF26242215408B00BACCC5 /* SourcesTests.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		376198172207B91E004EA343 /* RSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSUITests.swift; sourceTree = "<group>"; };
 		376198192207B91E004EA343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3779046C22095C340047E588 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		37A5DFAF2217DA3B003DEF15 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		37D9E920220AB632003ED67C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		37DF26242215408B00BACCC5 /* SourcesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 		376197F42207B91D004EA343 /* RSS */ = {
 			isa = PBXGroup;
 			children = (
+				37A5DFAE2217DA15003DEF15 /* Models */,
 				376197F52207B91D004EA343 /* AppDelegate.swift */,
 				376197F72207B91D004EA343 /* FirstViewController.swift */,
 				376197F92207B91D004EA343 /* SecondViewController.swift */,
@@ -119,7 +122,6 @@
 				376198002207B91E004EA343 /* LaunchScreen.storyboard */,
 				376198032207B91E004EA343 /* Info.plist */,
 				3779046C22095C340047E588 /* Keys.swift */,
-				3744D544220E9A9200E1F07B /* Sources.swift */,
 				3744D5462212A0CB00E1F07B /* Networking.swift */,
 			);
 			path = RSS;
@@ -142,6 +144,15 @@
 				376198192207B91E004EA343 /* Info.plist */,
 			);
 			path = RSSUITests;
+			sourceTree = "<group>";
+		};
+		37A5DFAE2217DA15003DEF15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37A5DFAF2217DA3B003DEF15 /* APIError.swift */,
+				3744D544220E9A9200E1F07B /* Sources.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		37D9E91F220AB632003ED67C /* Frameworks */ = {
@@ -311,6 +322,7 @@
 				3744D5472212A0CB00E1F07B /* Networking.swift in Sources */,
 				376197F62207B91D004EA343 /* AppDelegate.swift in Sources */,
 				376197F82207B91D004EA343 /* FirstViewController.swift in Sources */,
+				37A5DFB02217DA3B003DEF15 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
