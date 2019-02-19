@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='RSSUITests.xctest' tests='3' failures='0'>
+<testsuites name='RSSTests.xctest' tests='4' failures='0'>
   <testsuite name='RSSTests.RSSTests' tests='2' failures='0'>
     <testcase classname='RSSTests.RSSTests' name='testExample' time='0.001'/>
-    <testcase classname='RSSTests.RSSTests' name='testPerformanceExample' time='0.344'/>
+    <testcase classname='RSSTests.RSSTests' name='testPerformanceExample' time='0.346'/>
   </testsuite>
-  <testsuite name='RSSUITests.RSSUITests' tests='1' failures='0'>
-    <testcase classname='RSSUITests.RSSUITests' name='testExample' time='4.603'/>
+  <testsuite name='RSSTests.SourcesTests' tests='2' failures='0'>
+    <testcase classname='RSSTests.SourcesTests' name='testGetSources' time='1.012'/>
+    <testcase classname='RSSTests.SourcesTests' name='testGetSourcesWithClientError' time='0.161'/>
   </testsuite>
 </testsuites>
