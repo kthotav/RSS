@@ -9,7 +9,7 @@ env:
 cache: 
   directories: 
     - RSS/Carthage
-    - bundler
+    - RSS/bundler
 
 before_install:
   - brew install carthage || true
