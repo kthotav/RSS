@@ -26,4 +26,5 @@ before_script:
   - carthage bootstrap --platform iOS --no-use-binaries --cache-builds
 
 script:
+  - ls -la
   - bundle exec fastlane tests
