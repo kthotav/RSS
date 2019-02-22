@@ -16,6 +16,7 @@ before_install:
   - brew outdated carthage || brew upgrade carthage
   - gem update --system
   - gem install bundler
+  - ls -la
   - cd RSS
 
 install:
