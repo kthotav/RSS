@@ -117,18 +117,14 @@
 		376197F42207B91D004EA343 /* RSS */ = {
 			isa = PBXGroup;
 			children = (
-				37A5DFAE2217DA15003DEF15 /* Models */,
 				376197F52207B91D004EA343 /* AppDelegate.swift */,
-				376197F72207B91D004EA343 /* FirstViewController.swift */,
-				376197F92207B91D004EA343 /* SecondViewController.swift */,
-				376197FB2207B91D004EA343 /* Main.storyboard */,
-				374021EA221BB1F000C628F8 /* WelcomeContentViewController.swift */,
-				374021E8221BAF9A00C628F8 /* WelcomeViewController.swift */,
 				376197FE2207B91E004EA343 /* Assets.xcassets */,
-				376198002207B91E004EA343 /* LaunchScreen.storyboard */,
+				37F5C552221FCA4B00956FD7 /* Common */,
 				376198032207B91E004EA343 /* Info.plist */,
-				3779046C22095C340047E588 /* Keys.swift */,
-				3744D5462212A0CB00E1F07B /* Networking.swift */,
+				376198002207B91E004EA343 /* LaunchScreen.storyboard */,
+				376197FB2207B91D004EA343 /* Main.storyboard */,
+				37A5DFAE2217DA15003DEF15 /* Models */,
+				37F5C550221FCA0A00956FD7 /* ViewControllers */,
 			);
 			path = RSS;
 			sourceTree = "<group>";
@@ -167,6 +163,35 @@
 				37D9E920220AB632003ED67C /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37F5C550221FCA0A00956FD7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				376197F72207B91D004EA343 /* FirstViewController.swift */,
+				376197F92207B91D004EA343 /* SecondViewController.swift */,
+				37F5C551221FCA2E00956FD7 /* Welcome_Onboarding */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		37F5C551221FCA2E00956FD7 /* Welcome_Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				374021EA221BB1F000C628F8 /* WelcomeContentViewController.swift */,
+				374021E8221BAF9A00C628F8 /* WelcomeViewController.swift */,
+			);
+			path = Welcome_Onboarding;
+			sourceTree = "<group>";
+		};
+		37F5C552221FCA4B00956FD7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3779046C22095C340047E588 /* Keys.swift */,
+				3744D5462212A0CB00E1F07B /* Networking.swift */,
+			);
+			name = Common;
+			path = "New Group2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
