@@ -2,8 +2,9 @@
 RSS/Carthage/*
 
 # Fastlane
-RSS/fastlane/test_output/report.*
+RSS/fastlane/test_output/report.html
 RSS/fastlane/report.xml
+RSS/fastlane/test_output/report.junit
 
 # Other
 RSS/RSS.xcodeproj/project.xcworkspace/xcuserdata/*
