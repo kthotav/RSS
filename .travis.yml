@@ -18,7 +18,7 @@ before_install:
   - brew outdated carthage || brew upgrade carthage
 
 install:
-  - bundle install --jobs=3 --retry=3
+  - bundle install
   - bundle update fastlane
 
 before_script:
