@@ -29,7 +29,6 @@ class WelcomeViewController: UIPageViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        print(view.subviews)
     }
     
 
