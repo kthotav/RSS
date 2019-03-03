@@ -56,7 +56,7 @@ extension AppDelegate {
             UserDefaults.standard.set(true, forKey: UDKeys.visitedWelcomeScreen.rawValue)
             UserDefaults.standard.synchronize()
             
-            if let welcomeVC = sb.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController {
+            if let welcomeVC = sb.instantiateViewController(withIdentifier: "WelcomeContentVC") as? WelcomeContentViewController {
                 vc = welcomeVC
             }
         } else {
