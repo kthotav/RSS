@@ -19,6 +19,9 @@ class WelcomeContentViewController: UIViewController {
     }
 
     // MARK: - Actions
-    @IBAction private func getStartedButtonTapped(_ sender: UIButton) { }
+    @IBAction private func getStartedButtonTapped(_ sender: UIButton) {
+        UserDefaults.standard.set(true, forKey: UDKeys.visitedWelcomeScreen.rawValue)
+        UserDefaults.standard.synchronize()
+    }
 
 }

@@ -53,13 +53,10 @@ extension AppDelegate {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         var vc: UIViewController?
         if UserDefaults.standard.value(forKey: UDKeys.visitedWelcomeScreen.rawValue) == nil {
-            UserDefaults.standard.set(true, forKey: UDKeys.visitedWelcomeScreen.rawValue)
-            UserDefaults.standard.synchronize()
-            
             if let welcomeVC = sb.instantiateViewController(withIdentifier: "WelcomeContentVC") as? WelcomeContentViewController {
                 vc = welcomeVC
             }
-        } else {
+        } else if UserDefaults.standard.bool(forKey: UDKeys.visitedWelcomeScreen.rawValue) {
             if let initialVC = sb.instantiateInitialViewController() {
                 vc = initialVC
             }
