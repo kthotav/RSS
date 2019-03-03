@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        showInitialScreen()
+
         return true
     }
 
@@ -42,5 +44,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate {
+    // MARK: - Private
+    private func showInitialScreen() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        var vc: UIViewController?
+        if UserDefaults.standard.value(forKey: UDKeys.visitedWelcomeScreen.rawValue) == nil {
+            UserDefaults.standard.set(true, forKey: UDKeys.visitedWelcomeScreen.rawValue)
+            UserDefaults.standard.synchronize()
+            
+            if let welcomeVC = sb.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController {
+                vc = welcomeVC
+            }
+        } else {
+            if let initialVC = sb.instantiateInitialViewController() {
+                vc = initialVC
+            }
+        }
+        
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
+
+    }
 }
 
