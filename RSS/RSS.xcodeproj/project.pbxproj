@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3731B7DC222C41E7002E7E90 /* DesignableButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3731B7DB222C41E7002E7E90 /* DesignableButtonTests.swift */; };
 		374021E9221BAF9A00C628F8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374021E8221BAF9A00C628F8 /* WelcomeViewController.swift */; };
 		374021EB221BB1F000C628F8 /* WelcomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374021EA221BB1F000C628F8 /* WelcomeContentViewController.swift */; };
 		3744D545220E9A9200E1F07B /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3744D544220E9A9200E1F07B /* Sources.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3731B7DB222C41E7002E7E90 /* DesignableButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButtonTests.swift; sourceTree = "<group>"; };
 		374021E8221BAF9A00C628F8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		374021EA221BB1F000C628F8 /* WelcomeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeContentViewController.swift; sourceTree = "<group>"; };
 		3744D544220E9A9200E1F07B /* Sources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				3761980E2207B91E004EA343 /* Info.plist */,
 				3761980C2207B91E004EA343 /* RSSTests.swift */,
 				37DF26242215408B00BACCC5 /* SourcesTests.swift */,
+				3731B7DB222C41E7002E7E90 /* DesignableButtonTests.swift */,
 			);
 			path = RSSTests;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			files = (
 				37DF26252215408B00BACCC5 /* SourcesTests.swift in Sources */,
 				3761980D2207B91E004EA343 /* RSSTests.swift in Sources */,
+				3731B7DC222C41E7002E7E90 /* DesignableButtonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
