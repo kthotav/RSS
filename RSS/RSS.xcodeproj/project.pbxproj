@@ -23,6 +23,7 @@
 		376198182207B91E004EA343 /* RSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376198172207B91E004EA343 /* RSSUITests.swift */; };
 		376C185C222E50970012F78D /* Headlines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C185B222E50970012F78D /* Headlines.swift */; };
 		376C185E222E50EA0012F78D /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C185D222E50EA0012F78D /* Articles.swift */; };
+		376C1860222FA3A00012F78D /* HeadlinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C185F222FA3A00012F78D /* HeadlinesTests.swift */; };
 		3779046D22095C340047E588 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779046C22095C340047E588 /* Keys.swift */; };
 		37A5DFB02217DA3B003DEF15 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5DFAF2217DA3B003DEF15 /* APIError.swift */; };
 		37D9E921220AB632003ED67C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D9E920220AB632003ED67C /* Alamofire.framework */; };
@@ -69,6 +70,7 @@
 		376198192207B91E004EA343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		376C185B222E50970012F78D /* Headlines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headlines.swift; sourceTree = "<group>"; };
 		376C185D222E50EA0012F78D /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		376C185F222FA3A00012F78D /* HeadlinesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesTests.swift; sourceTree = "<group>"; };
 		3779046C22095C340047E588 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		37A5DFAF2217DA3B003DEF15 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		37D9E920220AB632003ED67C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				3761980C2207B91E004EA343 /* RSSTests.swift */,
 				37DF26242215408B00BACCC5 /* SourcesTests.swift */,
 				3731B7DB222C41E7002E7E90 /* DesignableButtonTests.swift */,
+				376C185F222FA3A00012F78D /* HeadlinesTests.swift */,
 			);
 			path = RSSTests;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				37DF26252215408B00BACCC5 /* SourcesTests.swift in Sources */,
 				3761980D2207B91E004EA343 /* RSSTests.swift in Sources */,
 				3731B7DC222C41E7002E7E90 /* DesignableButtonTests.swift in Sources */,
+				376C1860222FA3A00012F78D /* HeadlinesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

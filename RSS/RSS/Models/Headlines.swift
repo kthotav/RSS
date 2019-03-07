@@ -19,7 +19,7 @@ struct Headlines: Decodable {
 final class HeadlinesAPI {
     private init() { }
     static let shared = HeadlinesAPI()
-    let url: String = "https://newsapi.org/v2/headline?apiKey=\(NEWS_API_KEY)"
+    var url: String = "https://newsapi.org/v2/top-headlines?country=us&apiKey=\(NEWS_API_KEY)"
     
     typealias HeadlinesResult = (Result<Headlines>) -> ()
     
