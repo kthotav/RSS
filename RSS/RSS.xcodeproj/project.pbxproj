@@ -28,6 +28,10 @@
 		37A5DFB02217DA3B003DEF15 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5DFAF2217DA3B003DEF15 /* APIError.swift */; };
 		37D9E921220AB632003ED67C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D9E920220AB632003ED67C /* Alamofire.framework */; };
 		37DF26252215408B00BACCC5 /* SourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF26242215408B00BACCC5 /* SourcesTests.swift */; };
+		37EF7F5122323CC100998F00 /* HeadlinesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF7F5022323CC100998F00 /* HeadlinesCollectionViewController.swift */; };
+		37EF7F5322323DD300998F00 /* Headlines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EF7F5222323DD300998F00 /* Headlines.storyboard */; };
+		37EF7F562232478700998F00 /* HeadlinesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF7F542232478700998F00 /* HeadlinesCollectionViewCell.swift */; };
+		37EF7F572232478700998F00 /* HeadlinesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37EF7F552232478700998F00 /* HeadlinesCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		37A5DFAF2217DA3B003DEF15 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		37D9E920220AB632003ED67C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		37DF26242215408B00BACCC5 /* SourcesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTests.swift; sourceTree = "<group>"; };
+		37EF7F5022323CC100998F00 /* HeadlinesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesCollectionViewController.swift; sourceTree = "<group>"; };
+		37EF7F5222323DD300998F00 /* Headlines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Headlines.storyboard; sourceTree = "<group>"; };
+		37EF7F542232478700998F00 /* HeadlinesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesCollectionViewCell.swift; sourceTree = "<group>"; };
+		37EF7F552232478700998F00 /* HeadlinesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlinesCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,9 +195,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		37EF7F4F22323CA600998F00 /* Headlines */ = {
+			isa = PBXGroup;
+			children = (
+				37EF7F5022323CC100998F00 /* HeadlinesCollectionViewController.swift */,
+				37EF7F5222323DD300998F00 /* Headlines.storyboard */,
+				37EF7F542232478700998F00 /* HeadlinesCollectionViewCell.swift */,
+				37EF7F552232478700998F00 /* HeadlinesCollectionViewCell.xib */,
+			);
+			path = Headlines;
+			sourceTree = "<group>";
+		};
 		37F5C550221FCA0A00956FD7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				37EF7F4F22323CA600998F00 /* Headlines */,
 				376197F72207B91D004EA343 /* FirstViewController.swift */,
 				376197F92207B91D004EA343 /* SecondViewController.swift */,
 				37F5C551221FCA2E00956FD7 /* Welcome_Onboarding */,
@@ -322,8 +342,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EF7F5322323DD300998F00 /* Headlines.storyboard in Resources */,
 				376198022207B91E004EA343 /* LaunchScreen.storyboard in Resources */,
 				376197FF2207B91E004EA343 /* Assets.xcassets in Resources */,
+				37EF7F572232478700998F00 /* HeadlinesCollectionViewCell.xib in Resources */,
 				376197FD2207B91D004EA343 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,12 +392,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EF7F562232478700998F00 /* HeadlinesCollectionViewCell.swift in Sources */,
 				3744D545220E9A9200E1F07B /* Sources.swift in Sources */,
 				374021E9221BAF9A00C628F8 /* WelcomeViewController.swift in Sources */,
 				376197FA2207B91D004EA343 /* SecondViewController.swift in Sources */,
 				3755F0A2222B9943006F4B1E /* DesignableButton.swift in Sources */,
 				376C185E222E50EA0012F78D /* Articles.swift in Sources */,
 				3779046D22095C340047E588 /* Keys.swift in Sources */,
+				37EF7F5122323CC100998F00 /* HeadlinesCollectionViewController.swift in Sources */,
 				3744D5472212A0CB00E1F07B /* Networking.swift in Sources */,
 				376C185C222E50970012F78D /* Headlines.swift in Sources */,
 				376197F62207B91D004EA343 /* AppDelegate.swift in Sources */,
