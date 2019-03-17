@@ -19,8 +19,8 @@ struct Article: Decodable {
     let author: String?
     let title: String?
     let description: String?
-    let url: URL?
-    let urlToImage: URL?
+    let url: String?
+    let urlToImage: String?
     let publishedAt: String?
     let content: String?
 }
