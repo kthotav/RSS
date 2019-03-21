@@ -147,7 +147,7 @@
 			children = (
 				376197F52207B91D004EA343 /* AppDelegate.swift */,
 				376197FE2207B91E004EA343 /* Assets.xcassets */,
-				37F5C552221FCA4B00956FD7 /* Common */,
+				37F5C552221FCA4B00956FD7 /* Group */,
 				376198032207B91E004EA343 /* Info.plist */,
 				376198002207B91E004EA343 /* LaunchScreen.storyboard */,
 				376197FB2207B91D004EA343 /* Main.storyboard */,
@@ -237,7 +237,7 @@
 				37B2FAA82240C08900612484 /* Operations.swift */,
 			);
 			name = Common;
-			path = "New Group2";
+			path = "Common";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
