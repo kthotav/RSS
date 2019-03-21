@@ -26,6 +26,7 @@
 		376C1860222FA3A00012F78D /* HeadlinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C185F222FA3A00012F78D /* HeadlinesTests.swift */; };
 		3779046D22095C340047E588 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779046C22095C340047E588 /* Keys.swift */; };
 		37A5DFB02217DA3B003DEF15 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5DFAF2217DA3B003DEF15 /* APIError.swift */; };
+		37B2FAA92240C08900612484 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2FAA82240C08900612484 /* Operations.swift */; };
 		37D9E921220AB632003ED67C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D9E920220AB632003ED67C /* Alamofire.framework */; };
 		37DF26252215408B00BACCC5 /* SourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF26242215408B00BACCC5 /* SourcesTests.swift */; };
 		37EF7F5122323CC100998F00 /* HeadlinesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF7F5022323CC100998F00 /* HeadlinesCollectionViewController.swift */; };
@@ -77,6 +78,7 @@
 		376C185F222FA3A00012F78D /* HeadlinesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesTests.swift; sourceTree = "<group>"; };
 		3779046C22095C340047E588 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		37A5DFAF2217DA3B003DEF15 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		37B2FAA82240C08900612484 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		37D9E920220AB632003ED67C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		37DF26242215408B00BACCC5 /* SourcesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTests.swift; sourceTree = "<group>"; };
 		37EF7F5022323CC100998F00 /* HeadlinesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesCollectionViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +147,7 @@
 			children = (
 				376197F52207B91D004EA343 /* AppDelegate.swift */,
 				376197FE2207B91E004EA343 /* Assets.xcassets */,
-				37F5C552221FCA4B00956FD7 /* Common */,
+				37F5C552221FCA4B00956FD7 /* Group */,
 				376198032207B91E004EA343 /* Info.plist */,
 				376198002207B91E004EA343 /* LaunchScreen.storyboard */,
 				376197FB2207B91D004EA343 /* Main.storyboard */,
@@ -232,9 +234,10 @@
 				3755F0A0222B991D006F4B1E /* Designable */,
 				3779046C22095C340047E588 /* Keys.swift */,
 				3744D5462212A0CB00E1F07B /* Networking.swift */,
+				37B2FAA82240C08900612484 /* Operations.swift */,
 			);
 			name = Common;
-			path = "New Group2";
+			path = "Common";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +404,7 @@
 				3779046D22095C340047E588 /* Keys.swift in Sources */,
 				37EF7F5122323CC100998F00 /* HeadlinesCollectionViewController.swift in Sources */,
 				3744D5472212A0CB00E1F07B /* Networking.swift in Sources */,
+				37B2FAA92240C08900612484 /* Operations.swift in Sources */,
 				376C185C222E50970012F78D /* Headlines.swift in Sources */,
 				376197F62207B91D004EA343 /* AppDelegate.swift in Sources */,
 				376197F82207B91D004EA343 /* FirstViewController.swift in Sources */,

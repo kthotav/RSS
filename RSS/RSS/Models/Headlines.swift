@@ -54,3 +54,31 @@ final class HeadlinesAPI {
         }
     }
 }
+
+
+class ImageDownloader: Operation {
+    
+    struct ImageData {
+        let imageData: Data
+        let imageURL: URL
+    }
+    var urlToImage: URL
+    var imageDataClosure: ((ImageData?) -> ())?
+    
+    init(urlToImage: URL) {
+        self.urlToImage = urlToImage
+    }
+    
+    override func main() {
+        if isCancelled { return }
+        guard let completion = imageDataClosure else { return }
+        do {
+            let data = try Data(contentsOf: urlToImage)
+            let imgData = ImageData(imageData: data, imageURL: urlToImage)
+            completion(imgData)
+        } catch {
+            completion(nil)
+        }
+        
+    }
+}
