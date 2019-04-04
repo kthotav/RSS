@@ -147,7 +147,7 @@
 			children = (
 				376197F52207B91D004EA343 /* AppDelegate.swift */,
 				376197FE2207B91E004EA343 /* Assets.xcassets */,
-				37F5C552221FCA4B00956FD7 /* Group */,
+				37F5C552221FCA4B00956FD7 /* Common */,
 				376198032207B91E004EA343 /* Info.plist */,
 				376198002207B91E004EA343 /* LaunchScreen.storyboard */,
 				376197FB2207B91D004EA343 /* Main.storyboard */,
@@ -236,8 +236,7 @@
 				3744D5462212A0CB00E1F07B /* Networking.swift */,
 				37B2FAA82240C08900612484 /* Operations.swift */,
 			);
-			name = Common;
-			path = "Common";
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,13 +308,16 @@
 				TargetAttributes = {
 					376197F12207B91D004EA343 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					376198072207B91E004EA343 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 376197F12207B91D004EA343;
 					};
 					376198122207B91E004EA343 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 376197F12207B91D004EA343;
 					};
 				};
@@ -600,7 +602,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vkt.RSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -622,7 +624,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vkt.RSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -642,7 +644,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vkt.RSSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSS.app/RSS";
 			};
@@ -663,7 +665,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vkt.RSSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSS.app/RSS";
 			};
@@ -683,7 +685,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vkt.RSSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RSS;
 			};
@@ -703,7 +705,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vkt.RSSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RSS;
 			};
