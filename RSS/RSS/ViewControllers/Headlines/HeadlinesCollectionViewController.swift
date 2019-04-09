@@ -94,7 +94,7 @@ extension HeadlinesCollectionViewController {
         
         
         if let urlToImage = article.urlToImage {
-            guard let url = URL(string: urlToImage) else { return UICollectionViewCell() }
+            guard let url = URL(string: urlToImage) else { return cell }
             if let image = imageCache.object(forKey: url as NSURL) {
                 DispatchQueue.main.async {
                     cell.articleImageView.image = image
