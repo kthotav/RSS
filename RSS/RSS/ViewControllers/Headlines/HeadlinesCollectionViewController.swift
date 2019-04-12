@@ -15,7 +15,11 @@ class HeadlinesCollectionViewController: UICollectionViewController {
     private var imageCache: NSCache<NSURL, UIImage> = NSCache<NSURL, UIImage>()
     private let operations = Operations()
     private var operationsQueue: [IndexPath: ImageDownloader] = [:]
-    private let reuseIdentifier = "Cell"
+    
+    struct Constants {
+        static let cellID = "Cell"
+        static let segueID = "ShowArticle"
+    }
     
     
     // MARK: - View cycle
@@ -24,6 +28,16 @@ class HeadlinesCollectionViewController: UICollectionViewController {
         registerCollectionViewCell()
         configureLayout()
         fetchHeadlines()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier! {
+        case "ShowArticle":
+            guard let url = sender as? String else { return }
+            let vc = segue.destination as! ArticleViewController
+            vc.articleURL = url
+        default: break
+        }
     }
 
     
@@ -54,7 +68,7 @@ class HeadlinesCollectionViewController: UICollectionViewController {
     
     private func registerCollectionViewCell() {
         let nib = UINib(nibName: "HeadlinesCollectionViewCell", bundle: nil)
-        self.collectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView.register(nib, forCellWithReuseIdentifier: Constants.cellID)
     }
 }
 
@@ -74,7 +88,7 @@ extension HeadlinesCollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let hl = headlines else { return UICollectionViewCell() }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HeadlinesCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.cellID, for: indexPath) as! HeadlinesCollectionViewCell
         
         let updateImageCell: ((ImageDownloader.ImageData?) -> ()) = { [weak self] imageData in
             guard let this = self, let imageData = imageData else { return }
@@ -107,6 +121,13 @@ extension HeadlinesCollectionViewController {
             }
         }
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let hl = headlines else { return }
+        let article = hl.articles[indexPath.row]
+        guard let url = article.url else { return }
+        performSegue(withIdentifier: Constants.segueID, sender: url)
     }
 }
 
