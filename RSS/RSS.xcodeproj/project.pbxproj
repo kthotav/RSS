@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25629260225D954F00365C01 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562925F225D954F00365C01 /* ArticleViewController.swift */; };
+		25629262225D956000365C01 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25629261225D956000365C01 /* Article.storyboard */; };
+		25629264225D98BF00365C01 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25629263225D98BF00365C01 /* WebKit.framework */; };
+		25629278225DA63C00365C01 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 25629277225DA63C00365C01 /* blockerList.json */; };
 		25E762BF225C3AED0054938B /* DesignableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E762BE225C3AED0054938B /* DesignableImage.swift */; };
 		3731B7DC222C41E7002E7E90 /* DesignableButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3731B7DB222C41E7002E7E90 /* DesignableButtonTests.swift */; };
 		374021E9221BAF9A00C628F8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374021E8221BAF9A00C628F8 /* WelcomeViewController.swift */; };
@@ -53,7 +57,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		25629276225D9C0500365C01 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2562925F225D954F00365C01 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		25629261225D956000365C01 /* Article.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
+		25629263225D98BF00365C01 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		25629277225DA63C00365C01 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
 		25E762BE225C3AED0054938B /* DesignableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImage.swift; sourceTree = "<group>"; };
 		3731B7DB222C41E7002E7E90 /* DesignableButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButtonTests.swift; sourceTree = "<group>"; };
 		374021E8221BAF9A00C628F8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25629264225D98BF00365C01 /* WebKit.framework in Frameworks */,
 				37D9E921220AB632003ED67C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +137,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2562925E225D952900365C01 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				2562925F225D954F00365C01 /* ArticleViewController.swift */,
+				25629261225D956000365C01 /* Article.storyboard */,
+				25629277225DA63C00365C01 /* blockerList.json */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
 		3755F0A0222B991D006F4B1E /* Designable */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +227,7 @@
 		37D9E91F220AB632003ED67C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25629263225D98BF00365C01 /* WebKit.framework */,
 				37D9E920220AB632003ED67C /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -214,6 +247,7 @@
 		37F5C550221FCA0A00956FD7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2562925E225D952900365C01 /* Articles */,
 				37EF7F4F22323CA600998F00 /* Headlines */,
 				376197F72207B91D004EA343 /* FirstViewController.swift */,
 				376197F92207B91D004EA343 /* SecondViewController.swift */,
@@ -253,6 +287,7 @@
 				376197EF2207B91D004EA343 /* Frameworks */,
 				376197F02207B91D004EA343 /* Resources */,
 				37D9E922220AB63A003ED67C /* ShellScript */,
+				25629276225D9C0500365C01 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -305,7 +340,7 @@
 		376197EA2207B91D004EA343 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = VKT;
 				TargetAttributes = {
@@ -351,8 +386,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EF7F5322323DD300998F00 /* Headlines.storyboard in Resources */,
+				25629262225D956000365C01 /* Article.storyboard in Resources */,
 				376198022207B91E004EA343 /* LaunchScreen.storyboard in Resources */,
 				376197FF2207B91E004EA343 /* Assets.xcassets in Resources */,
+				25629278225DA63C00365C01 /* blockerList.json in Resources */,
 				37EF7F572232478700998F00 /* HeadlinesCollectionViewCell.xib in Resources */,
 				376197FD2207B91D004EA343 /* Main.storyboard in Resources */,
 			);
@@ -411,6 +448,7 @@
 				37EF7F5122323CC100998F00 /* HeadlinesCollectionViewController.swift in Sources */,
 				3744D5472212A0CB00E1F07B /* Networking.swift in Sources */,
 				37B2FAA92240C08900612484 /* Operations.swift in Sources */,
+				25629260225D954F00365C01 /* ArticleViewController.swift in Sources */,
 				376C185C222E50970012F78D /* Headlines.swift in Sources */,
 				376197F62207B91D004EA343 /* AppDelegate.swift in Sources */,
 				376197F82207B91D004EA343 /* FirstViewController.swift in Sources */,
